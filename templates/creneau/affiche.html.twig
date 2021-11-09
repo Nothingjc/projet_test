@@ -1,0 +1,27 @@
+{# premier template#}
+<h1>{{ title }}</h1>
+
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa obcaecati qui vitae nesciunt asperiores
+        repudiandae laudantium, exercitationem aspernatur corporis quis officia recusandae, magnam hic totam optio
+        veniam incidunt! Repudiandae, voluptatem.</p>
+    <p>Nobis quidem aliquam veritatis, earum commodi blanditiis et quia mollitia quisquam atque, ex sit, aperiam sequi
+        aspernatur debitis odit neque deleniti repellendus temporibus. Reprehenderit quas quidem quis distinctio cumque
+        necessitatibus.</p>
+    <p>Quas voluptatem tenetur corporis a aliquam, praesentium eligendi suscipit impedit natus amet tempora, omnis
+        mollitia vitae, dignissimos quod facilis quam. Recusandae eligendi maxime, vero culpa repudiandae consequatur
+        repellendus enim dolorem.</p>
+    <p>Ut a voluptas, fuga voluptatibus inventore quam veritatis perferendis quis consectetur illo ratione aliquid
+        adipisci accusamus, eaque nobis minima obcaecati iusto ullam amet explicabo dignissimos officia sint illum
+        earum? Ad!</p>
+</div>
+
+<h2>Commentaires({{ commentaires | length }})</h2>
+
+<ul>
+    {% for comment in commentaires %}
+    <li>{{ comment }}</li>
+    {% endfor %}
+    
+    
+</ul>
