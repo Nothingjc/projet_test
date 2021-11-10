@@ -5,3 +5,9 @@
 index:
    path: /commandes
    controller: App\Controller\CommandeController::recap
+
+# newIntervenant_success:
+#     path: /newintersuccess
+#     controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+#     defaults:
+#         template: "intervenant/static/success.html.twig"   
