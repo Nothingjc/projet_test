@@ -68,4 +68,12 @@ class IntervenantController extends AbstractController
             'sous_titre'=> $sousTitre,
         ]);
     }
+    #[route("intervenant/delete/{value}", name: 'intervenant_delete')]
+    public function delete($value) {
+        $em = $this->getDoctrine()->getManager();
+        $intervenant = $em->getRepository(Intervenant::class)->find($value);
+        $em->remove($intervenant);
+        $em->flush();
+        return $this->intervenantsList();
+    }
 }

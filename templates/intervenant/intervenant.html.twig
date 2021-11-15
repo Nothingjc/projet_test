@@ -18,9 +18,9 @@
 
 	<div class="example-wrapper">
 		<h1>Gestion des intervenants</h1>
-<pre>
+{# <pre>
     {{ dump(intervenants_liste) }}
-</pre>
+</pre> #}
 		<h2>{{ sous_titre }}</h2>
 		<ul>
 			{% if (intervenants_liste is not empty) %}
@@ -28,10 +28,11 @@
 					<li>{{ i.getNom()}},
 						{{ i.getPrenom()}},
 						<strong>{{ i.Specialiteprofessionnelle()}}</strong>
+                        <a href="{{ path('intervenant_delete', {'value': i.getId()  } ) }}">Delete</a>
 					</li>
 				{% endfor %}
 			{% else %}
-				<p>Pas d'intervenants</p>
+				<p>Pas d'intervenant</p>
 
 			{% endif %}
 
