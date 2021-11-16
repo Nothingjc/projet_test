@@ -76,4 +76,16 @@ class IntervenantController extends AbstractController
         $em->flush();
         return $this->intervenantsList();
     }
+
+
+    #[route("intervenant/dashboard", name: 'intervenant_dashboard')]
+    public function dashboard() {        
+        return $this->render('intervenant/intervenantDashboard.html.twig');
+    }
+
+    #[route("intervenant/intervenant/matieres/lister", name: 'intervenant_matieres_lister')]
+    public function IntervenantMatieresLister() {        
+        return $this->render('intervenant/intervenant_matieres_lister.html.twig', []);
+    }
+    
 }

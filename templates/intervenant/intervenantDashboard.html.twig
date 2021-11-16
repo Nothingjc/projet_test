@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+{% block title %}Mon tableau de bord{% endblock %}
+
+{% block body %}
+<style>
+.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2 px 6px;
+		}
+        </style>
+
+{# <h1>Bienvenue {{ user.prenom}} {{user.nom}}</h1> #}
+
+<div class="example-wrapper">
+<h2>Mon tableau de bord</h2>
+<ul>
+	<a href="{{ path('intervenant_matieres_lister') }}" title="Liste des matières">Liste des matières</a>
+</ul>
+
+</div>
+
+
+
+{% endblock %}
