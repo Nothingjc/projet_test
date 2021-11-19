@@ -2,9 +2,9 @@
 #   path: /
 #  controller: App\Controller\AccueilController::bonjour
 
-index:
-   path: /commandes
-   controller: App\Controller\CommandeController::recap
+# index:
+#    path: /commandes
+#    controller: App\Controller\CommandeController::recap
 
 # newIntervenant_success:
 #     path: /newintersuccess
